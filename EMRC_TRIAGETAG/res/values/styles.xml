@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlHighlight">@color/blue</item>
+        <item name="colorButtonNormal">@color/white_gone</item>
+        <item name="colorPrimaryDark">@color/blue_dr</item>
+    </style>
+    
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- API 14 theme customizations can go here. -->
+    </style>
+
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- PagerTabStrip给ViewPager设置标题 -->
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/main_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            tools:ignore="RtlHardcoded" >
+
+            <ImageView
+                android:id="@+id/main_left"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_a_left"
+                android:scaleType="centerInside"
+                android:visibility="gone"
+                tools:ignore="ContentDescription,RtlHardcoded" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            tools:ignore="RtlHardcoded" >
+
+            <ImageView
+                android:id="@+id/main_right"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_a_right"
+                android:scaleType="centerInside"
+                android:visibility="gone"
+                tools:ignore="RtlHardcoded,ContentDescription" />
+        </TableRow>
+    </TableRow>
+
+    <Button
+        android:id="@+id/main_log"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_gone"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>

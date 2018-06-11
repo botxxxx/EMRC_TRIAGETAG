@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="HardcodedText,LabelFor" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessParent" >
+
+        <TableRow
+            android:id="@+id/row_0"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp" >
+
+            <CheckBox
+                android:id="@+id/cb_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:singleLine="true"
+                android:text="CPR"
+                android:textSize="30sp"
+                tools:ignore="RtlHardcoded,HardcodedText" />
+
+            <EditText
+                android:id="@+id/ed_style"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:background="@color/gone"
+                android:drawableBottom="@drawable/gray_baseline"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="2"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/s_ts_52"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="5dp"
+            tools:ignore="RtlHardcoded" >
+
+            <TextView
+                android:id="@+id/tv_style_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="fix"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/ed_style_1"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="@color/gone"
+                android:drawableBottom="@drawable/gray_baseline"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="2"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv_style_1_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/s_ts_53"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            tools:ignore="RtlHardcoded" >
+
+            <CheckBox
+                android:id="@+id/cb_style_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="0.9% NS"
+                android:textSize="30sp"
+                tools:ignore="RtlHardcoded,HardcodedText" />
+
+            <EditText
+                android:id="@+id/ed_style_2"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="@color/gone"
+                android:drawableBottom="@drawable/gray_baseline"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv_style_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="ml"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row_3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            tools:ignore="RtlHardcoded" >
+
+            <CheckBox
+                android:id="@+id/cb_style_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="L.R"
+                android:textSize="30sp"
+                tools:ignore="RtlHardcoded,HardcodedText" />
+
+            <EditText
+                android:id="@+id/ed_style_3"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="@color/gone"
+                android:drawableBottom="@drawable/gray_baseline"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv_style_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="ml"
+                android:textColor="@android:color/black"
+                android:textSize="30sp"
+                tools:ignore="HardcodedText" />
+        </TableRow>
+    </LinearLayout>
+
+</FrameLayout>

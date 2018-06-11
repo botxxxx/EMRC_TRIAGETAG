@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/TopLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:text="建立案件資訊"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded,HardcodedText" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableBottom="@drawable/gray_baseline" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/MidLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/TopLinearLayout"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" />
+
+            <TableRow
+                android:id="@+id/info_name_tr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/info_name_t"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:singleLine="true"
+                    android:text="時間:"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    tools:ignore="RtlHardcoded,HardcodedText" />
+
+                <EditText
+                    android:id="@+id/info_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="2017/10/20 04:50"
+                    android:inputType="text"
+                    android:maxLength="6"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    tools:ignore="RtlHardcoded,HardcodedText" />
+            </TableRow>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" />
+
+            <TableRow
+                android:id="@+id/info_identity_tr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/info_identity_t"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:singleLine="true"
+                    android:text="地點:"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    tools:ignore="RtlHardcoded,HardcodedText" />
+
+                <EditText
+                    android:id="@+id/info_identity"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:hint="高雄市前鎮區"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    tools:ignore="RtlHardcoded,TextFields,HardcodedText" />
+
+                <ImageView
+                    android:id="@+id/bt_identity"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="2.5"
+                    android:background="@drawable/item_background_gone"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/fs_location"
+                    tools:ignore="ContentDescription,RtlHardcoded" />
+            </TableRow>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:singleLine="true"
+                    android:text="類型:"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    tools:ignore="RtlHardcoded,HardcodedText" />
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:hint="大量傷患"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    tools:ignore="RtlHardcoded,TextFields,HardcodedText" />
+            </TableRow>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" />
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:singleLine="true"
+                    android:text="派遣:"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    tools:ignore="RtlHardcoded,HardcodedText" />
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:hint="1080-XZ"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    tools:ignore="RtlHardcoded,TextFields,HardcodedText" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:singleLine="true"
+                    android:text="派遣:"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    tools:ignore="RtlHardcoded,HardcodedText" />
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:hint="1081-XZ"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    tools:ignore="RtlHardcoded,TextFields,HardcodedText" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:singleLine="true"
+                    android:text="派遣:"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    tools:ignore="RtlHardcoded,HardcodedText" />
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:hint="1082-XZ"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    tools:ignore="RtlHardcoded,TextFields,HardcodedText" />
+            </TableRow>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:id="@+id/tvna"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" />
+
+            <TableRow
+                android:id="@+id/info_other_tr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvna"
+                android:layout_marginBottom="30dp" >
+
+                <TextView
+                    android:id="@+id/info_other_t"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="@string/info_other"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <EditText
+                    android:id="@+id/info_other"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="氣爆,房屋倒塌"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    tools:ignore="RtlHardcoded,HardcodedText" />
+            </TableRow>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/info_no_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/id_000004"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        tools:ignore="RtlHardcoded,RelativeOverlap" />
+
+    <TextView
+        android:id="@+id/info_no_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/id_000004"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        tools:ignore="RtlHardcoded" />
+
+    <ImageView
+        android:id="@+id/info_check"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/fs_check_1"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+</RelativeLayout>

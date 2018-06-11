@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/t3_relativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/t3_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="姓名"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            tools:ignore="RtlHardcoded,HardcodedText" />
+
+        <TextView
+            android:id="@+id/t3_hospital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/t3_name"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="Hospital"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            tools:ignore="RtlHardcoded,RelativeOverlap,HardcodedText" />
+
+        <TextView
+            android:id="@+id/t3_other"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="left|bottom"
+            android:singleLine="true"
+            android:text="被註被註被註被註被註被註被註被註被註被註被註"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            tools:ignore="RtlHardcoded,RelativeOverlap,HardcodedText" />
+    </RelativeLayout>
+
+</FrameLayout>

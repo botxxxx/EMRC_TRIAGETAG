@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/menulist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="100dp"
+            android:divider="@color/gray_dr"
+            android:dividerHeight="1px"
+            android:drawableBottom="@drawable/gray_baseline"
+            android:footerDividersEnabled="true" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:drawableTop="@drawable/gray_baseline"
+            tools:ignore="RtlHardcoded" />
+
+        <Spinner
+            android:id="@+id/menu_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="135dp"
+            android:spinnerMode="dialog"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/main_no_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/id_000004"
+            android:textColor="@color/red"
+            android:textSize="20sp"
+            tools:ignore="RtlHardcoded,RelativeOverlap" />
+
+        <ImageView
+            android:id="@+id/menu_ok"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/fs_tag"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/menu_log"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white_gone"
+        android:text="@string/s_ts_41"
+        android:textSize="26sp"
+        android:visibility="gone"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="1dp"
+        android:drawableRight="@drawable/gray_baseline3"
+        tools:ignore="RtlHardcoded" />
+
+</RelativeLayout>

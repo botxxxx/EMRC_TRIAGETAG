@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/TopLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginTop="10sp"
+            android:text="@string/info_title"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableBottom="@drawable/gray_baseline" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/MidLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/TopLinearLayout"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" />
+
+            <TableRow
+                android:id="@+id/info_name_tr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/info_name_t"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:singleLine="true"
+                    android:text="@string/info_name"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <EditText
+                    android:id="@+id/info_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="130dp"
+                    android:inputType="text"
+                    android:maxLength="6"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    tools:ignore="RtlHardcoded" />
+            </TableRow>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" />
+
+            <TableRow
+                android:id="@+id/info_age_tr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/info_age_t"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:singleLine="true"
+                    android:text="@string/info_age"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <EditText
+                    android:id="@+id/info_age"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="130dp"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    tools:ignore="RtlHardcoded" />
+            </TableRow>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" />
+
+            <TableRow
+                android:id="@+id/info_gender_tr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/info_gender_t"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:singleLine="true"
+                    android:text="@string/info_gender"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <RadioGroup
+                    android:id="@+id/info_gender"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    tools:ignore="RtlHardcoded" >
+
+                    <RadioButton
+                        android:id="@+id/maleBtn"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/segmented_left"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/info_male"
+                        android:textColor="@drawable/segmented_text_color"
+                        android:textSize="30sp" />
+
+                    <RadioButton
+                        android:id="@+id/femalBtn"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/segmented_right"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="@string/info_femal"
+                        android:textColor="@drawable/segmented_text_color"
+                        android:textSize="30sp" />
+                </RadioGroup>
+
+                <CheckBox
+                    android:id="@+id/info_cb"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.1"
+                    android:checked="true"
+                    android:singleLine="true"
+                    android:text="@string/info_unknow"
+                    android:textSize="10sp"
+                    tools:ignore="HardcodedText,SmallSp" />
+            </TableRow>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" />
+
+            <TableRow
+                android:id="@+id/info_identity_tr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/info_identity_t"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:singleLine="true"
+                    android:text="@string/info_number"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <EditText
+                    android:id="@+id/info_identity"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="1"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    tools:ignore="RtlHardcoded,TextFields" />
+
+                <ImageView
+                    android:id="@+id/bt_identity"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="2.5"
+                    android:background="@drawable/item_background_gone"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_identity"
+                    tools:ignore="ContentDescription,RtlHardcoded" />
+            </TableRow>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:id="@+id/tvna"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" />
+
+            <TableRow
+                android:id="@+id/info_other_tr"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/tvna"
+                android:layout_marginBottom="30dp" >
+
+                <TextView
+                    android:id="@+id/info_other_t"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="@string/info_other"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    tools:ignore="RtlHardcoded" />
+
+                <EditText
+                    android:id="@+id/info_other"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="@string/info_hint"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    tools:ignore="RtlHardcoded,HardcodedText" />
+            </TableRow>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/info_no_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/id_000004"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        tools:ignore="RtlHardcoded,RelativeOverlap" />
+
+    <TextView
+        android:id="@+id/info_no_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/id_000004"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        tools:ignore="RtlHardcoded" />
+
+    <ImageView
+        android:id="@+id/info_photo"
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/info_no_top"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/item_background_sky"
+        android:src="@drawable/fs_image"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/info_prompt"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/info_photo"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:gravity="bottom|center_horizontal"
+        android:text="@string/info_ps"
+        android:textSize="10sp"
+        tools:ignore="RtlHardcoded,HardcodedText,SmallSp" />
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        tools:ignore="RtlHardcoded" />
+
+    <ImageView
+        android:id="@+id/info_check"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/fs_check_1"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+</RelativeLayout>

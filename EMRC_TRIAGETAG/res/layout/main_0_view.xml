@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    tools:ignore="RtlHardcoded" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UseCompoundDrawables" >
+
+        <ImageView
+            android:id="@+id/print_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:src="@drawable/bg_emrc_zh"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="32"
+            android:background="@color/gone" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                tools:ignore="UseCompoundDrawables,RtlHardcoded" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.91"
+                    android:background="@color/gone"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/print_tv_0_green"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="17dp"
+                    android:layout_weight="1"
+                    android:background="@color/gone"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/print_tv_1_black"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="17dp"
+                    android:layout_weight="1"
+                    android:background="@color/gone"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/print_tv_2_red"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="17dp"
+                    android:layout_weight="1"
+                    android:background="@color/gone"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/print_tv_3_red"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/gone"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/print_tv_4_red"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:background="@color/gone"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/print_tv_5_red"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:background="@color/gone"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/print_tv_6_gold"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:background="@color/gone"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.01"
+                    android:background="@color/gone"
+                    tools:ignore="RtlHardcoded" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/gone" />
+        </TableRow>
+    </TableRow>
+
+    <TextView
+        android:id="@+id/main_no_print"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/id_000004"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        tools:ignore="RtlHardcoded" />
+
+    <Button
+        android:id="@+id/print_log"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_gone"
+        android:text="NFC裝置不可使用!"
+        android:textSize="26sp"
+        android:visibility="gone"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="1dp"
+        android:drawableRight="@drawable/gray_baseline3"
+        tools:ignore="RtlHardcoded" />
+
+</RelativeLayout>

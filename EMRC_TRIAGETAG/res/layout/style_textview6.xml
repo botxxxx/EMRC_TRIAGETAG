@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="40dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/s_List_6"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="RtlHardcoded,HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv_h_red"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.7"
+                android:background="@color/red"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:ignore="RtlHardcoded,HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv_h_yellow"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.7"
+                android:background="@color/gold"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:ignore="RtlHardcoded,HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv_h_green"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.7"
+                android:background="@color/green"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:ignore="RtlHardcoded,HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv_h_black"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.7"
+                android:background="@color/black"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:ignore="RtlHardcoded,HardcodedText" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="40dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/s_List_7"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="RtlHardcoded,RelativeOverlap,HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv_s_red"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.7"
+                android:background="@color/red"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:ignore="RtlHardcoded,HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv_s_yellow"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.7"
+                android:background="@color/gold"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:ignore="RtlHardcoded,HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv_s_green"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.7"
+                android:background="@color/green"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:ignore="RtlHardcoded,HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv_s_black"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.7"
+                android:background="@color/black"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:ignore="RtlHardcoded,HardcodedText" />
+        </TableRow>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:drawableBottom="@drawable/gray_baseline"
+        tools:ignore="RtlHardcoded,HardcodedText" />
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="80dp" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/gray_baseline3"
+            android:singleLine="true"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:drawableRight="@drawable/gray_baseline3"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:drawableRight="@drawable/gray_baseline3"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7"
+            android:drawableRight="@drawable/gray_baseline3"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.7" />
+    </TableRow>
+
+</FrameLayout>

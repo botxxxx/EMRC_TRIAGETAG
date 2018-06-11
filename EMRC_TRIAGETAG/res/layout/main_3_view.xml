@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:padding="5dp" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent" >
+
+        <LinearLayout
+            android:id="@+id/mediCar_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp" />
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableBottom="@drawable/gray_baseline2" >
+
+                    <TextView
+                        android:id="@+id/mediCar_un"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="6dp"
+                        android:singleLine="true"
+                        android:text="@string/mediCar_unit"
+                        android:textColor="@color/black"
+                        android:textSize="30sp"
+                        tools:ignore="RtlHardcoded" />
+
+                    <EditText
+                        android:id="@+id/mediCar_unit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="10dp"
+                        android:inputType="text"
+                        android:maxLength="10"
+                        android:textColor="@color/black"
+                        android:textSize="30sp"
+                        tools:ignore="RtlHardcoded" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/mediCar_lp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="6dp"
+                        android:singleLine="true"
+                        android:text="@string/mediCar_license"
+                        android:textColor="@color/black"
+                        android:textSize="30sp"
+                        tools:ignore="RtlHardcoded" />
+
+                    <EditText
+                        android:id="@+id/mediCar_license"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="10dp"
+                        android:capitalize="characters"
+                        android:inputType="textCapCharacters"
+                        android:maxLength="10"
+                        android:textColor="@color/black"
+                        android:textSize="30sp"
+                        tools:ignore="RtlHardcoded,Deprecated" />
+                </TableRow>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableBottom="@drawable/gray_baseline2"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/mediCar_btn0"
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/item_background"
+                        android:text="@string/s_Menu_7"
+                        android:textColor="@color/black"
+                        android:textSize="30sp"
+                        tools:ignore="ButtonStyle,RtlHardcoded,HardcodedText" />
+
+                    <Button
+                        android:id="@+id/mediCar_btn5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/item_background"
+                        android:singleLine="true"
+                        android:text="@string/s_Menu_12"
+                        android:textColor="@color/black"
+                        android:textSize="30sp"
+                        tools:ignore="ButtonStyle,RtlHardcoded,HardcodedText" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp" >
+
+                    <Button
+                        android:id="@+id/mediCar_btn1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/item_background"
+                        android:text="@string/s_Menu_8"
+                        android:textColor="@color/black"
+                        android:textSize="30sp"
+                        tools:ignore="ButtonStyle,RtlHardcoded,HardcodedText" />
+
+                    <Button
+                        android:id="@+id/mediCar_btn2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/item_background"
+                        android:text="@string/s_Menu_9"
+                        android:textColor="@color/black"
+                        android:textSize="30sp"
+                        tools:ignore="ButtonStyle,RtlHardcoded,HardcodedText" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp" >
+
+                    <Button
+                        android:id="@+id/mediCar_btn3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/item_background"
+                        android:singleLine="true"
+                        android:text="@string/s_Menu_10"
+                        android:textColor="@color/black"
+                        android:textSize="30sp"
+                        tools:ignore="ButtonStyle,RtlHardcoded,HardcodedText" />
+
+                    <Button
+                        android:id="@+id/mediCar_btn4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/item_background"
+                        android:singleLine="true"
+                        android:text="@string/s_Menu_11"
+                        android:textColor="@color/black"
+                        android:textSize="30sp"
+                        tools:ignore="ButtonStyle,RtlHardcoded,HardcodedText" />
+                </TableRow>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableBottom="@drawable/gray_baseline2"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp" />
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp" >
+
+                    <Button
+                        android:id="@+id/mediCar_btn6"
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/item_background"
+                        android:text="@string/s_Menu_13"
+                        android:textColor="@color/black"
+                        android:textSize="30sp"
+                        tools:ignore="ButtonStyle,RtlHardcoded,HardcodedText" />
+
+                    <Button
+                        android:id="@+id/mediCar_btn7"
+                        android:layout_width="fill_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="6dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/item_background"
+                        android:text="@string/s_Menu_14"
+                        android:textColor="@color/black"
+                        android:textSize="30sp"
+                        tools:ignore="ButtonStyle,RtlHardcoded,HardcodedText" />
+                </TableRow>
+
+                <Button
+                    android:id="@+id/mediCar_btn8"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/item_background"
+                    android:singleLine="true"
+                    android:text="@string/s_Menu_15"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    tools:ignore="ButtonStyle,RtlHardcoded,HardcodedText,InefficientWeight" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
