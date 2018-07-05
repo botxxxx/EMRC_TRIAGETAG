@@ -197,7 +197,7 @@ public class InformationActivity extends Activity implements OnClickListener, On
 			i++;
 			dialog.setNeutralButton(getString( R.string.s_ts_46), new DialogInterface.OnClickListener() {
 				public void onClick(DialogInterface arg0, int arg1) {
-					startActivity(new Intent(InformationActivity.this, PhotoViewActivity.class));
+					startActivity(new Intent(InformationActivity.this, InformationViewActivity.class));
 				}
 			});
 		}
